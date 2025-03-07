@@ -85,12 +85,20 @@ async def progress_bar(current, total, reply, start):
             sp = str(hrb(speed)) + "/s"
             tot = hrb(total)
             cur = hrb(current)
-            bar_length = 11
+            bar_length = 20
             completed_length = int(current * bar_length / total)
-            remaining_length = bar_length - completed_length
-            progress_bar = "▬" * completed_length + "▭" * remaining_length
-            
+            remaining_length = bar_length - completed_length            
+            progress_bar = "■" * completed_length + "□" * remaining_length
+
             try:
-                await reply.edit(f'`\n ╭──⌯════𝐁𝐨𝐭 𝐒𝐭𝐚𝐭𝐢𝐜𝐬═════⌯──╮ \n├⚡ {progress_bar} \n├⚙️ Progress ➤ | {perc} | \n├🚀 Speed ➤ | {sp} | \n├📟 Processed ➤ | {cur} |\n├🧲 Size ➤ | {tot} | \n├🕑 ETA ➤ | {eta} | \n╰─══✨🦋𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🦋✨══─╯`\n') 
+                await reply.edit(f'`⟠───【 𝙍𝙊𝙇𝙀𝙓 𝙐𝙋𝙇𝙊𝘼𝘿 】───⟠\n\n'
+                                 f'{progress_bar}\n\n'
+                                 f'💾 Speed: {sp}\n'
+                                 f'📡 Progress: {perc}\n'
+                                 f'📁 Loaded: {cur}\n'
+                                 f'📊 Size: {tot}\n'
+                                 f'⏳ ETA: {eta}\n'
+                                 f'⟠───⚡ SYSTEM ONLINE ⚡───⟠`')
+         # await reply.edit(f'`⟠───【 𝙍𝙊𝙇𝙀𝙓 𝙐𝙋𝙇𝙊𝘼𝘿 】───⟠\n💾 Speed: {sp}\n📡 Progress: {perc}\n📁 Loaded: {cur}\n📊 Size: {tot}\n⏳ ETA: {eta}\n⟠───⚡ SYSTEM ONLINE ⚡───⟠`\n') 
             except FloodWait as e:
                 time.sleep(e.x)
