@@ -196,7 +196,7 @@ async def start_command(bot: Client, message: Message):
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("🦅ˢᵗᵒᵖᵖᵉᵈ ᵇᵃᵇʸ💞", True)
+    await m.reply_text("ˢᵗᵒᵖᵖᵉᵈ", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -239,7 +239,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣━━⪼ send 144  for 144p\n┣━━⪼ send 240  for 240p\n┣━━⪼ send 360  for 360p\n┣━━⪼ send 480  for 480p\n┣━━⪼ send 720  for 720p\n┣━━⪼ send 1080 for 1080p\n╰━━⌈⚡[🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋]⚡⌋━━➣ **")
+    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣━━⪼ send 144  for 144p\n┣━━⪼ send 240  for 240p\n┣━━⪼ send 360  for 360p\n┣━━⪼ send 480  for 480p\n┣━━⪼ send 720  for 720p\n┣━━⪼ send 1080 for 1080p\n╰━━⌈⚡[亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎]⚡⌋━━➣ **")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -373,10 +373,10 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n**🎞️ Title : **  {name1} __**[{res}]**__.mp4\n\n<pre><code>**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}\n📤 Uploaded By : {m.chat.id}**'
-                cc1 = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n**📁 Title : **  {name1} .pdf\n\n<pre><code>**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}\n📤 Uploaded By : {m.chat.id}**'
-                cczip = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n**📁 Title : **  {name1} .zip\n\n<pre><code>**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}\n📤 Uploaded By : {m.chat.id}**'  
-                ccimg = f'**——— ✦  {str(count).zfill(3)} ✦ ———**\n\n**📁 Title : **  {name1} .jpg\n\n<pre><code>**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}\n📤 Uploaded By : {m.chat.id}**'  
+                cc = f'**———   {str(count).zfill(3)}  ———**\n\n**🎞️ Title : **  {name1} __**[{res}]**__.mp4\n\n<pre><code>亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'
+                cc1 = f'**———   {str(count).zfill(3)}  ———**\n\n**📁 Title : **  {name1} .pdf\n\n<pre><code>亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'
+                cczip = f'**———   {str(count).zfill(3)}  ———**\n\n**📁 Title : **  {name1} .zip\n\n<pre><code>亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'  
+                ccimg = f'**———   {str(count).zfill(3)}  ———**\n\n**📁 Title : **  {name1} .jpg\n\n<pre><code>亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'  
                 
                 if "drive" in url:
                     try:
@@ -455,7 +455,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue
                           
                 else:
-                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n🔗𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}/{len(links)}\n\n**📚𝐓𝐢𝐭𝐥𝐞** » `{name}\n\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p`\n\n**✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦"
+                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n🔗𝐈𝐧𝐝𝐞𝐱 » {str(count).zfill(3)}/{len(links)}\n\n**📚𝐓𝐢𝐭𝐥𝐞** » `{name}\n\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p`\n\n**✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -473,7 +473,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🕊️Done Baby💞")
+    await m.reply_text("That's it ❤️")
 
 
 
