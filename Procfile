@@ -1,1 +1,1 @@
-worker: python3 -m module 
+worker: python3 -m modules
