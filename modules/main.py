@@ -196,18 +196,18 @@ async def start_command(bot: Client, message: Message):
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("ˢᵗᵒᵖᵖᵉᵈ", True)
+    await m.reply_text("🫸 Stopped 🫷", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 @bot.on_message(filters.command(["cpw"]) )
 async def txt_handler(bot: Client, m: Message):
-    editable = await m.reply_text(f"**🔹Hi I am Poweful TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and wait.**")
+    editable = await m.reply_text(f"**🔹SEND YOUR TXT FILE 🗃️.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎"
+    credit = f"亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎"
     token = f"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NDEyNjcwMDYuMTgzLCJkYXRhIjp7Il9pZCI6IjY1YzFlZTE1ODZmMTQ4MDAxMjdkOWIxOSIsInVzZXJuYW1lIjoiNjM5NDM4MzAzMCIsImZpcnN0TmFtZSI6IkRlZXBhbnNoIiwibGFzdE5hbWUiOiJNaXNocmEiLCJvcmdhbml6YXRpb24iOnsiX2lkIjoiNWViMzkzZWU5NWZhYjc0NjhhNzlkMTg5Iiwid2Vic2l0ZSI6InBoeXNpY3N3YWxsYWguY29tIiwibmFtZSI6IlBoeXNpY3N3YWxsYWgifSwiZW1haWwiOiJyYWplc2htaXNocmExOTc5MEBnbWFpbC5jb20iLCJyb2xlcyI6WyI1YjI3YmQ5NjU4NDJmOTUwYTc3OGM2ZWYiLCI1Y2M5NWEyZThiZGU0ZDY2ZGU0MDBiMzciXSwiY291bnRyeUdyb3VwIjoiSU4iLCJ0eXBlIjoiVVNFUiJ9LCJpYXQiOjE3NDA2NjIyMDZ9.hDoYcFo9uxxhajHudIZtqgtqd3G8QdNxQSS9qkdjNJg"
     try:    
         with open(x, "r") as f:
@@ -230,7 +230,7 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your Batch Name**\n\n**Send __1__ for use default.**")
+    await editable.edit("**Enter Your Batch Name**\n\n**Send __D__ for use default.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -266,9 +266,9 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️⁪⁬⁮⁮⁮"
+    credit = "️亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎"
     if raw_text3 == '1':
-        CR = '𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️'
+        CR = '亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -373,10 +373,10 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**———   {str(count).zfill(3)}  ———**\n\n**🎞️ Title : **  {name1} __**[{res}]**__.mp4\n\n<pre><code>亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'
-                cc1 = f'**———   {str(count).zfill(3)}  ———**\n\n**📁 Title : **  {name1} .pdf\n\n<pre><code>亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'
-                cczip = f'**———   {str(count).zfill(3)}  ———**\n\n**📁 Title : **  {name1} .zip\n\n<pre><code>亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'  
-                ccimg = f'**———   {str(count).zfill(3)}  ———**\n\n**📁 Title : **  {name1} .jpg\n\n<pre><code>亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'  
+                cc = f'**———{str(count).zfill(3)}———**\n\n**🎞️ Title : **  {name1} __**[{res}]**__亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎.mp4\n\n<pre><code>**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'
+                cc1 = f'**———{str(count).zfill(3)}———**\n\n**📁 Title : **  {name1} 亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎.pdf\n\n<pre><code>**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'
+                cczip = f'**———{str(count).zfill(3)}———**\n\n**📁 Title : **  {name1} 亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎.zip\n\n<pre><code>**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'  
+                ccimg = f'**———{str(count).zfill(3)}———**\n\n**📁 Title : **  {name1} 亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎.jpg\n\n<pre><code>**📚 Course :** {b_name}</code></pre>\n\n**🌟 Extracted By : {CR}**'  
                 
                 if "drive" in url:
                     try:
