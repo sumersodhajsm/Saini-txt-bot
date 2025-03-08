@@ -455,7 +455,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue
                           
                 else:
-                    Show = f"**┌───────────────⚡\n\n│ **Download Started...** ⏳\n\n├───────────────📥\n\n│ 🔗 **Index:** {str(count).zfill(3)}/{len(links)}\n\n│ 📚 **Title:** `{name}`\n\n│ 🍁 **Quality:** `{raw_text2}p`\n\n└───────────────🚀\n\n✦ **Bot Made By:** 亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎"
+                    Show = f"**┌───────────────⚡\n\n""│ **Download Started...** ⏳\n\n""├───────────────📥\n\n""│ 🔗 **Index:** {str(count).zfill(3)}/{len(links)}\n\n""│ 📚 **Title:** `{name}`\n\n""│ 🍁 **Quality:** `{raw_text2}p`\n\n""└───────────────🚀\n\n""✦ **Bot Made By:** 亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
