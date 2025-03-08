@@ -239,7 +239,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**"╭━━━━━━━━━━━━━━━━━━━━━━━╮\n""┃ 🎬 𝐒𝐄𝐋𝐄𝐂𝐓 𝐘𝐎𝐔𝐑 𝐑𝐄𝐒𝐎𝐋𝐔𝐓𝐈𝐎𝐍 🎬┃\n""┣━━━━━━━━━━━━━━━━━━━━━━━┫\n""┃ 🌟 `144` ➜ 144p | SILK SMOOTH ✨┃\n""┃ 💎 `240` ➜ 240p | DIAMOND BALANCE 💠┃\n""┃ 🏆 `360` ➜ 360p | ROYAL STANDARD 👑┃\n""┃ 🚀 `480` ➜ 480p | ULTRA CLARITY 🔥┃\n""┃ 🖥 `720` ➜ 720p | PREMIUM HD 🎞┃\n""┃ 🎭 `1080` ➜ 1080p | ULTIMATE LUXURY 🎥┃\n""╰━━━━━━━━━━━━━━━━━━━━━━━╯\n""⚜️ 亗 𝚁 𝙾 𝙻 𝙴 𝚇 ☯︎ | 𝐎𝐍𝐋𝐘 𝐅𝐎𝐑 𝐄𝐗𝐂𝐋𝐔𝐒𝐈𝐕𝐄𝐒 ⚜️\n**")
+    await editable.edit("∝ 𝐄𝐧𝐭𝐞𝐫 𝐄𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧 🎬\n☞ 144,240,360,480,720,1080\nPlease Choose Quality")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
