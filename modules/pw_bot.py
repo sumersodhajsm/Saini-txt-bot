@@ -4,7 +4,7 @@ import yt_dlp
 import requests
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from config import API_ID, API_HASH, BOT_TOKEN, PW_TOKEN, DOWNLOAD_PATH
+from vars import API_ID, API_HASH, BOT_TOKEN, PW_TOKEN, DOWNLOAD_PATH
 from aiohttp import web
 
 # Initialize the bot
